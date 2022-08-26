@@ -1,0 +1,84 @@
+body {
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#OurSpeakers {
+    text-align: center;
+}
+
+.Speakers {
+    padding:5% 5% 5% 5%;
+}
+
+h1 {
+    font-family: "Lucida Handwriting", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    size: 15ch;
+}
+
+.DemoBig{
+    background-color: aliceblue;
+    width: 100%;
+    margin-bottom: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+.Demo {
+    background-color: aliceblue;
+    width: 22%;
+    margin-bottom: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width:650px) {
+  .Demo {
+  width: 45%;
+  display: block;
+}
+}
+
+@media screen and (min-width:651px ) {
+  .Demo {
+  width: 40%;
+  display: block;
+}
+}
+
+
+@media screen and (min-width:800px ) {
+  .Demo {
+  width: 45%;
+  display: block;
+}
+}
+
+@media screen and (min-width:950px ) {
+  .Demo {
+  width: 40%;
+  display: block;
+}
+}
+
+
+
+
+    
+
+    
+
+
+
+#text {
+    color: black;
+}
+
