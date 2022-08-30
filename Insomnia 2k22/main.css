@@ -20,35 +20,39 @@ h1 {
     size: 15ch;
 }
 
-.DemoBig{
-    background-color: aliceblue;
-    width: 100%;
-    margin-bottom: 16px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 8px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
-}
-.Demo {
+}*/
+.Demo,.Demo1 {
     background-color: aliceblue;
     width: 22%;
+    position: relative;
     margin-bottom: 16px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 8px;
+    padding: 8px 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+.Demo{
+    animation-duration: 5s;
+    animation-name: moving-left;
+}
+
+.Demo1{
+  animation-duration: 5s;
+  animation-name: moving-right;
 }
 
 @media screen and (max-width:650px) {
-  .Demo {
+  .Demo,.Demo1 {
   width: 45%;
   display: block;
 }
 }
 
 @media screen and (min-width:651px ) {
-  .Demo {
+  .Demo,.Demo1 {
   width: 40%;
   display: block;
 }
@@ -56,29 +60,43 @@ h1 {
 
 
 @media screen and (min-width:800px ) {
-  .Demo {
+  .Demo,.Demo1 {
   width: 45%;
   display: block;
 }
 }
 
 @media screen and (min-width:950px ) {
-  .Demo {
+  .Demo,.Demo1 {
   width: 40%;
   display: block;
 }
 }
 
+@keyframes moving-left{
+0%{
+  margin-left: 0%;
+  transform:translateX(0%)
+}
+100%{
+  margin-left: 50%;
+  transform:translateX(-50%)
+}
+}
 
-
-
-    
-
-    
+@keyframes moving-right {
+  0%{
+    margin-right: 0%;
+    transform:translateX(0%)
+  }
+  100%{
+    margin-right: 50%;
+    transform: translateX(50%);
+  }
+}
 
 
 
 #text {
     color: black;
 }
-
